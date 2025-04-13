@@ -1,0 +1,102 @@
+.gameContainer {
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.difficultyButtons {
+  margin-bottom: 20px;
+}
+
+.difficultyButton {
+  margin-right: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.difficultyButton:hover {
+  background-color: #45a049;
+}
+
+.targetAnimal {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 40px;
+  border-radius: 12px;
+  user-select: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card.selected {
+  background-color: #bde0fe;
+  transform: scale(1.05);
+}
+
+.card.checked {
+  border: 3px solid;
+}
+
+.card.correct {
+  border-color: #4CAF50;
+}
+
+.card.incorrect {
+  border-color: #f44336;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.controlButton {
+  margin-right: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2196F3;
+  color: white;
+  cursor: pointer;
+}
+
+.controlButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.controlButton:hover:not(:disabled) {
+  background-color: #1976D2;
+}
+
+.result {
+  margin-top: 15px;
+  font-size: 20px;
+} 
